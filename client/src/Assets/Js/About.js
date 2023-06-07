@@ -1,0 +1,18 @@
+// import Swiper JS
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
+const mySwiper = new Swiper(".swiper-container", {
+    direction: "vertical",
+    loop: true,
+    pagination: ".swiper-pagination",
+    grabCursor: true,
+    speed: 1000,
+    paginationClickable: true,
+    parallax: true,
+    autoplay: false,
+    effect: "slide",
+    mousewheelControl: 1
+  });
+
+  console.log(mySwiper);

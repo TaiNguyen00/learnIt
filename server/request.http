@@ -1,0 +1,50 @@
+
+GET http://localhost:8080/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzg3NmRkZTE5ZWI2MGM2NDU3ODgzYWEiLCJpYXQiOjE2Njk4MjA0NTR9.tapzEDsjRUJ4owWcgMamZioueEEsppFfiVRDL-nx6D4
+
+###
+PUT  http://localhost:8080/api/post/update-post/63b169d45ce355fefac98619
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2IxNjlkNDVjZTM1NWZlZmFjOTg2MTkiLCJpYXQiOjE2NzQ3NDUwNDZ9.YW_wJH10bKOYWXDQLsLxfQHWYrVdwMO9Wro_LNBQNGc
+
+{
+    "title": "Tài Nguyễn B",
+    "description": "oke",
+    "url": "vue.org",
+    "status": "learning"
+}
+
+###
+POST  http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "minhhodlerviewer@gmail.com",
+    "password": "123"
+}
+
+###
+POST  http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "tainguyenb",
+    "password": "12345"
+}
+
+###
+POST  http://localhost:8080/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2I2ZDY2Yzc3Zjc3ZmNiYjlkZDY5N2UiLCJpYXQiOjE2NzQ3NDkzMDF9.RR41RBkK24mE3WutxmBAzB3K5WBS3fUaL_0ZcHcxFSs
+
+{
+    "title": "Bài post Testing",
+    "description": "Oke post",
+    "url": "reactjs.com"
+}
+
+
+###
+PUT http://localhost:8080/api/post/update-post/
+
+###

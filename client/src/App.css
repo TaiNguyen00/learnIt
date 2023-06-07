@@ -1,0 +1,160 @@
+.landing {
+	position: relative;
+	background: url('./Assets/img/landing.jpg') no-repeat center center/cover;
+	height: 100vh;
+}
+
+.dark-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.landing-inner {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.landing-inner form {
+	width: 30%;
+}
+
+.landing-inner h1,
+.landing-inner h4,
+.landing-inner p {
+	color: white;
+}
+
+.spinner-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Post button */
+.post-button {
+	padding-top: 0;
+	background: transparent;
+	border: none;
+}
+
+.post-button:hover {
+	background: transparent;
+}
+
+a.post-button.btn:focus,
+a.post-button.btn:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+button.post-button.btn:focus,
+button.post-button.btn:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Floating add button */
+.btn-floating {
+	position: fixed;
+	z-index: 12;
+	right: -97%;
+}
+
+.btn-floating:hover {
+	background: transparent;
+}
+
+.btn-floating:focus,
+.btn-floating:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Add new post tooltip */
+.tooltip {
+	background: transparent;
+}
+
+.tooltip .arrow::before {
+	border-left-color: #78c2ad;
+}
+
+.tooltip-inner {
+	background: #78c2ad;
+}
+
+/* Post border thicker */
+.border-success,
+.border-warning,
+.border-danger {
+	border-width: 2px;
+}
+
+/* Post title */
+.post-title {
+	margin-bottom: 0.5rem;
+}
+
+
+/* navbar */
+.dark-theme {
+	--bg: #1f2937;
+	--bg-active: #111827;
+	--white: white;
+	--black: black;
+  }
+  .light-theme {
+	--bg: #f3f4f6;
+	--bg-active: #d1d5db;
+	/* --bg: #d1d5db; */
+	--white: black;
+	--black: white;
+  }
+  * {
+	transition: all 0.3s ease-in-out;
+	color: var(--white);
+  }
+  nav > ul {
+	background-color: var(--bg);
+	color: var(--white);
+  }
+  .material-symbols-outlined {
+	color: var(--white);
+  }
+  .avatar {
+	background-color: var(--white);
+  }
+  .active {
+	background-color: var(--bg-active);
+  }
+  .navlink {
+	border: solid 1px transparent;
+  }
+  .navlink:hover {
+	border: solid 1px var(--white);
+  }
+  .nav-menu {
+	background-color: var(--bg);
+	color: var(--white);
+  }
+  .show-menu {
+	display: flex;
+	/*   transform: translateY(0) scaleX(100) scaleY(100); */
+  }
+  .custom-text-navbar {
+	width: 200px !important;
+  }
